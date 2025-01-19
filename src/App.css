@@ -268,7 +268,7 @@
   margin: 0px auto;
 }
 
-@media(max-width:350px){
+@media(min-width:350px){
   .prp {
     width: 150px;
     height: 150px;

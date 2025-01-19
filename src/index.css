@@ -20,7 +20,7 @@ body{
   margin: 0px auto;
 }
 
-@media(max-width:350px){
+@media(min-width:350px){
   body{
     padding-top: 10px;
     margin: 0;
