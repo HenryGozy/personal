@@ -1,0 +1,36 @@
+*{
+  font-family:'Poppins',Roboto;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  outline: none;
+}
+body{
+  border: solid;
+  width: 100%;
+  margin: 0px auto;
+}
+
+#root{
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  width:1000px;
+  height: max-content;
+  margin: 0px auto;
+}
+
+@media(max-width:350px){
+  body{
+    padding-top: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root{
+    width:350px;
+   display: flex;
+   flex-direction: column;
+  }
+}
