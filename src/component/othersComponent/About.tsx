@@ -17,7 +17,7 @@ export default function About() {
     return (
         <>
             <div className="About_card">
-                <h2><H2 title={aboutDetail.head}/>
+                <h2>{aboutDetail.head}
                     {!aboutDetail.toggle?
                         <i className="fa-solid fa-angle-down" onClick={Toggle}></i> :
                         <i className="fa-solid fa-angle-up" onClick={Toggle}></i>}

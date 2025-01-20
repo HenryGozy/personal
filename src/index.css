@@ -1,37 +1,40 @@
-*{
-  font-family:'Poppins',Roboto;
-  margin:0;
+* {
+  font-family: 'Poppins', Roboto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-weight: 400;
   outline: none;
 }
-body{
+
+body {
   width: 100%;
-  margin: 0px auto;
-  background-color: rgb(20,20,20);
+  margin: 0 auto;
+  background-color: rgb(20, 20, 20);
   color: white;
+  padding-top: 50px;
 }
 
-#root{
+#root {
   display: grid;
   grid-template-columns: 350px 1fr;
-  width:1000px;
+  width: 1000px;
   height: max-content;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
-@media(min-width:350px){
-  body{
-    padding-top: 10px;
+@media (max-width: 480px) { /* Updated to 480px */
+  body {
+    padding-top: 0px;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #root{
-    width:350px;
-   display: flex;
-   flex-direction: column;
+  #root {
+    width: 100%;
+    max-width: 350px; /* Flexibly handle narrow widths */
+    display: flex;
+    flex-direction: column;
   }
 }

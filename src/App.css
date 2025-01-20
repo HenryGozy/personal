@@ -1,7 +1,9 @@
 #H2{
   font-size: 30px;
   color: rgb(200,200,200);
-  font-weight: 500;
+
+  margin-bottom: 30px;
+  
 }
 .Profile {}
 
@@ -37,10 +39,8 @@
 
 .prp {
   width: 200px;
-  height: 200px;
-  object-fit: cover;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.447);
 
 }
@@ -58,7 +58,9 @@
   cursor: pointer;
   color: whitesmoke;
   background-color: rgba(0, 0, 0, 0.44);
+  border: none;
   border-radius: 5px;
+  font-size: 13px;
 }
 
 .About_card {
@@ -67,15 +69,17 @@
 }
 
 .About_card h2 {
-  font-size: 20px;
   display: flex;
-
   align-items: center;
+  font-size: 30px;
+  color: rgb(200,200,200);
+  text-align: center;
+  margin-bottom: 30px
 
 }
 
 .About_card p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 25px;
   margin-top: 10px;
   color: rgb(150,150,150);
@@ -217,12 +221,7 @@
 
 }
 
-.Contact h2 {
-  font-size: 30px;
-  display: flex;
-  font-weight: ;
-  align-items: center;
-}
+
 
 #form {
   display: flex;
@@ -278,28 +277,21 @@
 #btn {
   font-size: 16px;
   letter-spacing: 1px;
-  width:50%;
+  width:max-content;
   color: whitesmoke;
   padding: 10px 20px;
-  right: 0;
-  bottom: 0px;
   background-color: rgba(0, 0, 0, 0.44);
-
+border: none;
   border-radius: 5px;
-  margin: 0px auto;
 }
 
-@media(min-width:350px){
+@media(max-width:480px){
   #H2{
     font-size: 25px;
   }
   .prp {
-    width: 150px;
-    height: 150px;
-    margin: 0px auto;
-    object-fit: cover;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
+    width: 100%;
+
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.447);
   
   }
