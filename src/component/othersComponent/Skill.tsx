@@ -1,8 +1,9 @@
+import H2 from "../H2"
 export default function Skill() {
     return (
         <>
             <div className="skill_cards">
-                <h2>MY SKILLS :</h2>
+                <H2 title="SKILLS"/>
                 <div className="skill_grid">
                     <div>   
                         <h3>Core Web Skill</h3>

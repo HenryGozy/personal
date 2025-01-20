@@ -1,8 +1,10 @@
+import H2 from "../H2"
+
 export default function Contanct(){
     return(
         <>
         <div className="Contact">
-            <h2>CONTACT :</h2>
+            <H2 title="CONTACT"/>
             <form action="" id="form">
                 <span>
                     <label htmlFor="name">Name</label>

@@ -1,3 +1,8 @@
+#H2{
+  font-size: 30px;
+  color: rgb(200,200,200);
+  font-weight: 500;
+}
 .Profile {}
 
 .Profile_card {
@@ -13,9 +18,14 @@
 }
 
 .Profile h1 {
-  font-size: 30px;
-  font-weight: 500;
-  font-family: "Ysabeau+SC", sans-serif;
+  font-size: 50px;
+  font-family: "Ysabeau SC", serif;
+  border: solid;
+  width:max-content;
+  background: linear-gradient(135deg,rgb(174, 9, 36),purple);
+  -webkit-background-clip: text;
+  color: transparent;
+
 }
 
 .Others {
@@ -39,6 +49,7 @@
 
 .prp_text {
   font-size: 13px;
+  color: lightgray;
 }
 
 .prp_btn {
@@ -46,8 +57,7 @@
   width: max-content;
   cursor: pointer;
   color: white;
-
-  background-color: dodgerblue;
+  background-color: black;
   border: none;
   border-radius: 5px;
 }
@@ -69,6 +79,8 @@
   font-size: 13px;
   line-height: 25px;
   margin-top: 10px;
+  color: rgb(150,150,150);
+  
 }
 
 .fa-angle-down,
@@ -89,14 +101,14 @@
   margin-top: 10px;
 }
 
-.skill_cards h2 {
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-}
+
 
 .skill_cards h3 {
-  font-size: 15px;
+  color: rgb(150,150,150);
+
+  font-size: 13px;
+  text-transform: uppercase;
+
 }
 
 .skill_card {
@@ -111,11 +123,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  row-gap: 10px;
   padding: 10px;
 }
 
 .skill_cont p {
   font-size: 13px;
+  color: lightgray;
+  text-transform: capitalize;
 }
 
 .skill_cont img {
@@ -127,12 +142,6 @@
 
 }
 
-.Project h2 {
-  font-size: 30px;
-  display: flex;
-  font-weight: ;
-  align-items: center;
-}
 
 
 .Project_grid {
@@ -149,7 +158,8 @@
 
 
 .Project_card h3 {
-  font-size: 15px;
+  font-size: 13px;
+  color: lightgray;
 }
 
 .project_cont {
@@ -219,6 +229,7 @@
   row-gap: 50px;
   margin-top: 40px;
   position: relative;
+  color: white;
 }
 
 #form span {
@@ -226,7 +237,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
   position:relative;
 
   row-gap: 10px;
@@ -236,10 +247,15 @@
 #form span input[type="text"] {
   padding: 10px 20px;
   width:100%;
+  background-color: rgb(30, 30, 30);
+  color:lightgray;
+  letter-spacing: 1px;
+  border: none;
+
 }
 #form span label{
   float: left;
-  color: rgb(0, 0, 0);
+  color: lightgrey;
   position: absolute;
   top:-30px;
   left:0;
@@ -251,6 +267,9 @@
   min-height: 200px;
   max-height: 200px;
   padding: 10px 20px;
+  background-color: rgb(30, 30, 30);
+  border: none;
+
 }
 
 #btn {
@@ -261,7 +280,7 @@
   padding: 10px 20px;
   right: 0;
   bottom: 0px;
-  background-color: dodgerblue;
+  background-color:black;
   color: white;
   border: none;
   border-radius: 5px;
@@ -269,6 +288,9 @@
 }
 
 @media(min-width:350px){
+  #H2{
+    font-size: 25px;
+  }
   .prp {
     width: 150px;
     height: 150px;
@@ -282,8 +304,10 @@
 
   .Profile h1 {
     font-size: 35px;
+    text-align: center;
+    margin: 0px auto;
     font-weight: 500;
-    font-family: "Ysabeau+SC", sans-serif;
+    font-family: "Ysabeau SC", sans-serif;
   }
 
   .Profile_card {

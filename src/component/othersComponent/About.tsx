@@ -1,3 +1,4 @@
+import H2 from "../H2"
 import { useState } from "react"
 interface aDetail {
     head: string
@@ -6,7 +7,7 @@ interface aDetail {
 }
 export default function About() {
     const [aboutDetail, setAboutDetail] = useState<aDetail>({
-        head: "About me",
+        head: "ABOUT",
         content: "Hi, I’m Henry! An 18-year-old web developer specializing in creating clean, responsive websites. My focus is on mastering modern tools like React and TypeScript to deliver impactful digital experiences",
         toggle: true
     })
@@ -16,7 +17,7 @@ export default function About() {
     return (
         <>
             <div className="About_card">
-                <h2>{aboutDetail.head}
+                <h2><H2 title={aboutDetail.head}/>
                     {!aboutDetail.toggle?
                         <i className="fa-solid fa-angle-down" onClick={Toggle}></i> :
                         <i className="fa-solid fa-angle-up" onClick={Toggle}></i>}

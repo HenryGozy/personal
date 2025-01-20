@@ -1,11 +1,12 @@
 import ProjectImg from "/src/assets/devconnect .png"
 import One from "/src/assets/ONE.png"
 import Shop from "/src/assets/shopingCart.png"
+import H2 from "../H2"
 export default function Project(){
     return (
         <>
         <div className="Project">
-            <h2 >PROJECT :</h2>
+            <H2 title="PROJECT"/>
             <div  className="Project_grid">
                 <div className="Project_card">
                     <h3>Invideo Ai</h3>
