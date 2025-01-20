@@ -57,7 +57,7 @@ export default function Skill() {
                                 <p>git</p>
                             </span>
                             <span className="skill_cont">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                            <i className="devicon-github-original"></i>
                                 <p>git hub</p>
                             </span>
 

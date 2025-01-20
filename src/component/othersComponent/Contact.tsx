@@ -21,7 +21,7 @@ export default function Contanct(){
                     <textarea name="mess" id="mess"></textarea>
                 </span>
 
-                <button type="submit" id="btn">submit</button>
+                <button type="submit" id="btn">submit <i className="fa-solid fa-plane-departure"></i></button>
             </form>
         </div>
         </>

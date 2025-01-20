@@ -56,9 +56,9 @@
   padding: 10px 20px;
   width: max-content;
   cursor: pointer;
-  color: white;
-  background-color: black;
-  border: none;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.44);
+  border: purple solid 1px;
   border-radius: 5px;
 }
 
@@ -135,6 +135,10 @@
 
 .skill_cont img {
   width: 50px;
+}
+
+ .devicon-github-original{
+  font-size:50px;
 }
 
 .Project {
@@ -276,13 +280,12 @@
   font-size: 16px;
   letter-spacing: 1px;
   width:50%;
-
+  color: whitesmoke;
   padding: 10px 20px;
   right: 0;
   bottom: 0px;
-  background-color:black;
-  color: white;
-  border: none;
+  background-color: rgba(0, 0, 0, 0.44);
+  border: purple solid 1px;
   border-radius: 5px;
   margin: 0px auto;
 }
