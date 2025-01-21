@@ -29,6 +29,15 @@
   color: transparent;
 
 }
+#socials{
+  display: flex;
+  column-gap: 10px;
+  
+}
+#socials i{
+  font-size: 30px;
+  color: rgb(150,150,150);
+}
 
 .Others {
   display: flex;
@@ -38,9 +47,11 @@
 }
 
 .prp {
-  width: 200px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  width: 280px;
+  height: 280px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.447);
 
 }
@@ -290,8 +301,12 @@ border: none;
     font-size: 25px;
   }
   .prp {
-    width: 100%;
-
+    width: 280px;
+    height: 280px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:0px auto;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.447);
   
   }
@@ -304,6 +319,12 @@ border: none;
     font-family: "Ysabeau SC", sans-serif;
   }
 
+  #socials{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    
+  }
   .Profile_card {
     text-align: center;
   }
