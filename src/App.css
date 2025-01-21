@@ -5,7 +5,7 @@
   margin-bottom: 30px;
   
 }
-.Profile {}
+
 
 .Profile_card {
   display: flex;
@@ -52,8 +52,6 @@
   aspect-ratio: 1/1;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.447);
-
 }
 
 
@@ -72,6 +70,7 @@
   border: none;
   border-radius: 5px;
   font-size: 13px;
+  text-transform: capitalize;
 }
 
 .About_card {
@@ -290,7 +289,7 @@
   letter-spacing: 1px;
   width:max-content;
   color: whitesmoke;
-  padding: 10px 20px;
+  padding: 10px 40px;
   background-color: rgba(0, 0, 0, 0.44);
 border: none;
   border-radius: 5px;
@@ -306,9 +305,7 @@ border: none;
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
-    margin:0px auto;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.447);
-  
+    margin:0px auto;  
   }
 
   .Profile h1 {
