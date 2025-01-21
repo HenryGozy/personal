@@ -1,4 +1,4 @@
-import H2 from "../H2"
+
 import { useState } from "react"
 interface aDetail {
     head: string
