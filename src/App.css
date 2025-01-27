@@ -1,6 +1,7 @@
 #H2{
   font-size: 30px;
   color: rgb(200,200,200);
+  font-family: "Agu Display", serif;
 
   margin-bottom: 30px;
   
@@ -17,6 +18,8 @@
   margin-top: 20px;
   position: sticky;
   top: 30px;
+
+  margin-top: 90px;
 }
 
 .Profile h1 {
@@ -44,14 +47,16 @@
   flex-direction: column;
   row-gap: 30px;
   margin-top: 20px;
+
 }
 
 .prp {
-  width: 280px;
-  height: 280px;
+  width: 230px;
+  height: 230px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   object-fit: cover;
+  opacity: 0.9;
 }
 
 
@@ -84,7 +89,8 @@
   font-size: 30px;
   color: rgb(200,200,200);
   text-align: center;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  font-family: "Agu Display", serif
 
 }
 
@@ -189,6 +195,7 @@
 
 .project_cont img {
   width: 100%;
+  opacity:0.9;
 }
 
 .PrpC {
@@ -249,7 +256,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 95%;
   position:relative;
 
   row-gap: 10px;
@@ -280,6 +287,7 @@
   max-height: 200px;
   padding: 10px 20px;
   background-color: rgb(30, 30, 30);
+  color: white;
   border: none;
 
 }
@@ -298,16 +306,24 @@ border: none;
 @media(max-width:480px){
   #H2{
     font-size: 25px;
+    text-align: center;
+  }
+  .About_card h2{
+  
+    justify-content: center;
   }
   .prp {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
     margin:0px auto;  
+    opacity: 0.9;
   }
-
+  .Profile_card{
+    margin-top: 0;
+  }
   .Profile h1 {
     font-size: 35px;
     text-align: center;

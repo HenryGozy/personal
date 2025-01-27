@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
   background-color: rgb(20, 20, 20);
   color: white;
-
+  padding-bottom: 40px;
 }
 
 #root {}
@@ -20,15 +20,16 @@ body {
 .root {
   display: grid;
   grid-template-columns: 350px 1fr;
-  width: 1000px;
+  width: 1010px;
   height: max-content;
   margin: 0 auto;
+  column-gap: 20px;
 }
 
 .root_header {
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
+  row-gap: 10px;
 }
 
 .header {
@@ -36,8 +37,8 @@ body {
   width: 1000px;
   margin: 0px auto;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 50px;
+  justify-content:space-between;
+  padding: 20px 50px;
 }
 
 .header h2 {
@@ -57,6 +58,7 @@ body {
   background-color: rgba(0, 0, 0, 0.44);
   border: none;
   border-radius: 5px;
+  text-transform: capitalize;
 }
 
 @media (max-width: 480px) {
@@ -83,7 +85,7 @@ body {
   }
   .pee{
     font-size: 20px;
-    font-family: "Agu Display", serif;
+    font-family: "
   }
   .header button{
     padding:10px;
