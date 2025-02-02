@@ -4,7 +4,7 @@ export default function Contanct(){
     return(
         <>
         <div className="Contact">
-            <H2 title="CONTACT"/>
+            <H2 title="MESSAGE"/>
             <form action="" id="form">
                 <span>
                     <label htmlFor="name">Name</label>
