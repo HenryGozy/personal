@@ -7,7 +7,7 @@ export default function App(){
     <div className="root_header">
       <span className="header">
         <h2><span className="pee">p</span>ersonal <span className="pee">P</span>orfolio</h2>
-        <button>contact me <i className="fa-solid fa-phone"></i></button>
+        <button>whatsapp <i className="fa-brands fa-whatsapp"></i></button>
       </span>
       <div className="root">
         <Profile />

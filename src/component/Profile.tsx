@@ -1,4 +1,4 @@
-import MyProfile from '../assets/20250112_093903.jpg'
+import MyProfile from '../assets/pp.jpg'
 export default function Profile(){
     return(
         <>
@@ -12,7 +12,7 @@ export default function Profile(){
                 <i className="fa-brands fa-linkedin"></i>
                 </div>
                 <p className='prp_text'>Frontend Developer | React Enthusiast | lifelong Learner </p>
-                <button className='prp_btn'>reach out </button>
+                <button className='prp_btn'>my resume <i className="fa-solid fa-download"></i></button>
             </div>
         </section>
         </>
