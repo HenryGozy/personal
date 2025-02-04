@@ -14,30 +14,30 @@ export const ProjectCards:Cards[] =[
     {
         name:"invideo ai",
         img:One,
-        about:"DevConnect a platform which let devs to find and connect with one another created using Html | Css | Javascript",
+        about:"DevConnect a platform which let devs to find and connect with one another",
         href:"https://github.com/HenryGozy/invideo-ai",
         skills:['html',"css",'javascript']
     },
     {
         name:"devconnect",
         img:ProjectImg,
-        about:"DevConnect a platform which let devs to find and connect with one another created using Html | Css | Javascript",
+        about:"DevConnect a platform which let devs to find and connect with one another",
         href:"https://github.com/HenryGozy/invideo-ai",
-        skills:['html',"css",'javascript']
+        skills:['html',"css",'javascript' ,'typescript','React' ]
     },
 
     {
         name:"simple todo app",
         img:todo,
-        about:"DevConnect a platform which let devs to find and connect with one another created using Html | Css | Javascript",
+        about:"DevConnect a platform which let devs to find and connect with one another",
         href:"https://github.com/HenryGozy/invideo-ai",
-        skills:['html',"css",'javascript',"typescript",]
+        skills:['html',"css",'javascript',"typescript",'react']
     },
 
     {
         name:"ecommerce platform ",
         img:Shop,
-        about:"DevConnect a platform which let devs to find and connect with one another created using Html | Css | Javascript",
+        about:"DevConnect a platform which let devs to find and connect with one another ",
         href:"https://github.com/HenryGozy/invideo-ai",
         skills:['html',"css",'javascript']
     },
