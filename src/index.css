@@ -55,7 +55,7 @@ body {
   width: max-content;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.925);
-  background: linear-gradient(135deg,rgba(174, 9, 37, 0.649),rgba(128, 0, 128, 0.649));
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.629), rgba(174, 9, 37, 0.629));
   border: none;
   border-radius: 5px;
   font-size: 15px;

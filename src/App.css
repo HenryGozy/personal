@@ -1,9 +1,106 @@
-#H2{
+#H2 {
   font-size: 33px;
-  color: rgb(200,200,200);
+  color: rgb(200, 200, 200);
   font-family: "Agu Display", serif;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+.ShowSkillCardCont {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.814);
+  display: grid;
+  place-items: center;
+  z-index: 999;
+}
+
+.ShowSkillCard {
+  width: 700px;
+  height: max-content;
+  background-color: rgb(25, 25, 25);
+  padding: 30px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.381);
+}
+
+.ShowSkillCard h1 {
+  text-transform: uppercase;
+  font-family: "Agu Display", serif;
+  font-size: 30px;
+}
+
+.ShowSkillCard img {
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.ShowSkillCard .cancel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 30px;
+  border: none;
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.629), rgba(174, 9, 37, 0.629));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.381);
+  color: white;
+  cursor: pointer;
+}
+
+.innerCont {
+
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.innerCont ul {
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+}
+
+.innerCont ul li {
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.229), rgba(174, 9, 37, 0.229));
+  text-transform: capitalize;
+}
+
+.code_button {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+
+}
+
+.code_button button {
+  flex: 0.7;
+  padding: 10px;
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.629), rgba(174, 9, 37, 0.629));
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.code_button button:nth-of-type(1) {
+  background: linear-gradient(30deg, rgba(40, 40, 40), rgba(40, 40, 40));
+
+}
+
+.code_button button a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .Others {
@@ -23,7 +120,7 @@
   margin-top: 20px;
   position: sticky;
   top: 30px;
-  background-color:rgba(30, 30, 30, 0.477);
+  background-color: rgba(30, 30, 30, 0.477);
   margin-top: 90px;
   padding: 20px;
   border-radius: 5px;
@@ -33,20 +130,22 @@
   font-size: 50px;
   font-family: "Ysabeau SC", serif;
   border: solid;
-  width:max-content;
-  background: linear-gradient(135deg,rgb(174, 9, 36),purple);
+  background: linear-gradient(-30deg, rgb(144, 144, 144), rgb(174, 9, 37));
+  width: max-content;
   -webkit-background-clip: text;
   color: transparent;
 
 }
-#socials{
+
+#socials {
   display: flex;
   column-gap: 10px;
-  
+
 }
-#socials i{
+
+#socials i {
   font-size: 30px;
-  color: rgb(150,150,150);
+  color: rgb(150, 150, 150);
 }
 
 
@@ -72,7 +171,7 @@
   width: max-content;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.925);
-  background: linear-gradient(135deg,rgba(174, 9, 37, 0.649),rgba(128, 0, 128, 0.649));
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.629), rgba(174, 9, 37, 0.629));
   border: none;
   border-radius: 5px;
   font-size: 15px;
@@ -84,19 +183,19 @@
   display: flex;
   align-items: center;
   font-size: 20px;
-  color: rgb(200,200,200);
+  color: rgb(200, 200, 200);
   text-align: center;
   margin-bottom: 20px;
   font-family: "Agu Display", serif;
-  
+
 }
 
 .About_card p {
   font-size: 15px;
   line-height: 25px;
   margin-top: 10px;
-  color: rgb(150,150,150);
-  background-color:rgba(30, 30, 30, 0.477);
+  color: rgb(150, 150, 150);
+  background-color: rgba(30, 30, 30, 0.477);
   padding: 20px;
   border-radius: 5px;
 }
@@ -110,13 +209,13 @@
 
 
 .skill_grid {
- display: grid;
- grid-template-columns: repeat(2,1fr);
- column-gap: 20px;
- row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
-.skill_card{
+.skill_card {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -126,19 +225,19 @@
   border-radius: 5px;
 }
 
-.skill_card h3{
-color: lightgray;  
-margin-left: 10px;
+.skill_card h3 {
+  color: lightgray;
+  margin-left: 10px;
 }
 
-.inner_card{
+.inner_card {
   display: flex;
-  column-gap: 10px; 
+  column-gap: 10px;
   align-items: center;
 
 }
 
-.skill_imagCont{
+.skill_imagCont {
 
   display: flex;
   flex-direction: column;
@@ -147,38 +246,37 @@ margin-left: 10px;
   align-items: center;
 }
 
-.skill_imagCont img{
+.skill_imagCont img {
   width: 60px;
 }
 
-.skill_imagCont p{
+.skill_imagCont p {
   text-transform: capitalize;
   font-size: 13px;
 }
 
-.aboutSkills{
-}
+.aboutSkills {}
 
-.aboutSkills ul{
+.aboutSkills ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
 
-.aboutSkills ul li{
+.aboutSkills ul li {
   font-size: 13px;
-  color: rgb(150,150,150);
+  color: rgb(150, 150, 150);
   text-transform: capitalize;
 }
 
-.aboutSkills ul li span{
+.aboutSkills ul li span {
   font-size: 16px;
   margin-right: 10px;
 }
 
-.devicon-github-original{
-  font-size:50px;
+.devicon-github-original {
+  font-size: 50px;
 }
 
 .Project_grid {
@@ -198,23 +296,23 @@ margin-left: 10px;
   border-radius: 5px;
 }
 
-.Project_card:hover{
-  transform:scale(1.05);
+.Project_card:hover {
+  transform: scale(1.05);
   transition: ease-out 0.15s;
   cursor: pointer;
 }
 
 
-.Project_card h3{
+.Project_card h3 {
   font-size: 20px;
-  color:rgb(200,200,200);
+  color: rgb(200, 200, 200);
   text-transform: capitalize;
   margin-left: 20px;
 }
 
 .Project_card img {
-  width:100%;
-  opacity:0.7;
+  width: 100%;
+  opacity: 0.9;
   margin: 0px auto;
 }
 
@@ -230,31 +328,33 @@ margin-left: 10px;
 
 
 
-.PrpC p{
+.PrpC p {
   font-size: 14px;
-  color: rgb(150,150,150);
-  
+  color: rgb(150, 150, 150);
+
 }
 
-.Skills{
+.Skills {
   width: 90%;
 }
 
-.Skills ul{
+.Skills ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   row-gap: 10px;
   column-gap: 5px;
 }
-.Skills ul li{
+
+.Skills ul li {
   padding: 5px;
-  background: linear-gradient(135deg,rgba(174, 9, 37, 0.259),rgba(128, 0, 128, 0.229));
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.229), rgba(174, 9, 37, 0.229));
   color: rgba(255, 255, 255, 0.886);
   font-size: 13px;
   border-radius: 3px;
   text-transform: capitalize;
 }
+
 .Contact {
   padding: 10px 0px 10px 10px;
 
@@ -279,7 +379,7 @@ margin-left: 10px;
   justify-content: center;
   align-items: center;
   width: 100%;
-  position:relative;
+  position: relative;
 
   row-gap: 10px;
   text-align: left;
@@ -287,20 +387,21 @@ margin-left: 10px;
 
 #form span input[type="text"] {
   padding: 10px 20px;
-  width:100%;
+  width: 100%;
   height: 50px;
   background-color: rgb(30, 30, 30);
-  color:lightgray;
+  color: lightgray;
   letter-spacing: 1px;
   border: none;
 
 }
-#form span label{
+
+#form span label {
   float: left;
   color: lightgrey;
   position: absolute;
-  top:-30px;
-  left:0;
+  top: -30px;
+  left: 0;
 }
 
 #form span textarea {
@@ -320,7 +421,7 @@ margin-left: 10px;
   width: max-content;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.925);
-  background: linear-gradient(135deg,rgba(174, 9, 37, 0.649),rgba(128, 0, 128, 0.649));
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.629), rgba(174, 9, 37, 0.629));
   border: none;
   border-radius: 5px;
   font-size: 15px;
@@ -328,29 +429,33 @@ margin-left: 10px;
   letter-spacing: 1px;
 }
 
-@media(max-width:480px){
-  #H2{
+@media(max-width:480px) {
+  #H2 {
     font-size: 25px;
     text-align: center;
   }
-  .About_card h2{
-  
+
+  .About_card h2 {
+
     justify-content: center;
     padding: 0px;
   }
+
   .prp {
     width: 200px;
     height: 200px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
-    margin:0px auto;  
+    margin: 0px auto;
     opacity: 0.9;
   }
-  .Profile_card{
+
+  .Profile_card {
     margin-top: 0;
     padding: 20px 0px;
   }
+
   .Profile h1 {
     font-size: 35px;
     text-align: center;
@@ -359,53 +464,140 @@ margin-left: 10px;
     font-family: "Ysabeau SC", sans-serif;
   }
 
-  #socials{
+  #socials {
     display: flex;
     column-gap: 10px;
     justify-content: center;
-    
+
   }
+
   .Profile_card {
     text-align: center;
   }
 
-  .prp_btn {  
+  .prp_btn {
     margin: 0px auto;
   }
 
-  .skill_grid{
+  .skill_grid {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 40px;
   }
+
   #form span {
-    width:100%;
-    padding-right:10px;
+    width: 100%;
+    padding-right: 10px;
   }
+
   #btn {
-    width:90%;
+    width: 90%;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.925);
-    background: linear-gradient(135deg,rgba(174, 9, 37, 0.649),rgba(128, 0, 128, 0.649));
     border: none;
     border-radius: 5px;
     font-size: 15px;
     text-transform: capitalize;
     letter-spacing: 1px;
   }
-  
+
   .Project_grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 40px;
 
   }
-  .Project_card{
-  
-  }
 
-  .PrpC p{
+  .Project_card {}
+
+  .PrpC p {
     font-size: 13px;
     color: lightgray;
   }
- 
+
+  .ShowSkillCardCont {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.814);
+    display: grid;
+    place-items: center;
+    z-index: 999;
+    padding: 10px;
+  }
+
+  .ShowSkillCard {
+    width: 100%;
+    height: max-content;
+    padding: 30px 10px;
+  }
+
+  .ShowSkillCard h1 {
+    text-transform: uppercase;
+    font-family: "Agu Display", serif;
+    font-size: 30px;
+  }
+
+
+
+
+
+  .innerCont {
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .innerCont ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+    width: 100%;
+  }
+
+  .innerCont ul li {
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.229), rgba(174, 9, 37, 0.229));
+    text-transform: capitalize;
+    font-size: 13px;
+  }
+
+  .code_button {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+
+  }
+
+  .code_button button {
+    flex: 0.7;
+    padding: 10px;
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.629), rgba(174, 9, 37, 0.629));
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .code_button button:nth-of-type(1) {
+    background: linear-gradient(30deg, rgba(40, 40, 40), rgba(40, 40, 40));
+
+  }
+
+  .code_button button a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+
 }

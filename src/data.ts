@@ -8,7 +8,9 @@ export type Cards = {
     img:string
     about:string
     href:string
-    skills?:string[]
+    livesite?:string;
+    id?:string | undefined,
+    skills:string[]
 }
 export const ProjectCards:Cards[] =[
     {
@@ -16,13 +18,14 @@ export const ProjectCards:Cards[] =[
         img:One,
         about:"DevConnect a platform which let devs to find and connect with one another",
         href:"https://github.com/HenryGozy/invideo-ai",
+        livesite:"https://henrygozy.github.io/invideo-ai/",
         skills:['html',"css",'javascript']
     },
     {
         name:"devconnect",
         img:ProjectImg,
         about:"DevConnect a platform which let devs to find and connect with one another",
-        href:"https://github.com/HenryGozy/invideo-ai",
+        href:"https://github.com/HenryGozy/DevConnect",
         skills:['html',"css",'javascript' ,'typescript','React' ]
     },
 
@@ -30,7 +33,7 @@ export const ProjectCards:Cards[] =[
         name:"simple todo app",
         img:todo,
         about:"DevConnect a platform which let devs to find and connect with one another",
-        href:"https://github.com/HenryGozy/invideo-ai",
+        href:"https://github.com/HenryGozy/Simple-To-Do-App",
         skills:['html',"css",'javascript',"typescript",'react']
     },
 
@@ -38,7 +41,7 @@ export const ProjectCards:Cards[] =[
         name:"ecommerce platform ",
         img:Shop,
         about:"DevConnect a platform which let devs to find and connect with one another ",
-        href:"https://github.com/HenryGozy/invideo-ai",
+        href:"https://github.com/HenryGozy/shop",
         skills:['html',"css",'javascript']
     },
 ]

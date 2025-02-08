@@ -5,7 +5,7 @@ export default function Skill() {
         <>
             <div className="skill_cards">
                 <H2 title="SKILLS" />
-                <div className="skill_grid">
+                <div className="skill_grid"> 
                     <div className="skill_card">
                         <h3>Frontend Fundermental</h3>
                         <div className="inner_card">
